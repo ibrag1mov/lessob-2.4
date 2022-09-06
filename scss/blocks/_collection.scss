@@ -1,0 +1,79 @@
+.collection{
+  padding: 132px 0;
+  height: 526px;
+  .container{
+    width: 1111px;
+    height: 525px;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+
+    .title__wrapper{
+      width: 100%;
+      position: absolute;
+      height: 174px;
+      background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #ffffff 100%);
+      z-index: 2;
+      padding: 0 20px;
+    }
+
+    .collection-title{
+      position: absolute;
+      top: 75px;
+      padding-left: 20px;
+      opacity: 0.5;
+      @include text-size(1092px, 150px, 72px, #83888f, 'Fraunces', 900);
+      z-index: 1;
+    }
+
+    .collection__cards{
+      width: 100%;
+      position: absolute;
+      z-index: 3;
+      display: flex;
+      justify-content: space-between;
+      top: 115px;  
+
+      .collection__card{
+        width: 255px;
+        height: 400px;
+        padding-top: 244px;
+  
+        &-title{
+          text-align: center;
+          margin-bottom: 24px;
+          @include text-size(255px, 24px, 32px, #333d4b, 'Fraunces', 900);
+        }
+  
+        &-text{
+          @include text-size(255px, 16px, 26px, #333d4b, 'Barlow', 400);
+          text-align: center;
+        }
+      }
+
+      .collection__card_one{
+        background-image: url(../../images/espresso-img.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+      }
+
+      .collection__card_two{
+        background-image: url(../../images/planalto-img.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+      }
+
+      .collection__card_three{
+        background-image: url(../../images/piccollo-img.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+      }
+
+      .collection__card_four{
+        background-image: url(../../images/danche.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+      }
+    }
+  }
+}

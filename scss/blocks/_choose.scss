@@ -1,0 +1,91 @@
+.choose{
+  height: 950px;
+  padding: 200px 0 100px 0;
+  position: relative;
+  
+  .container{
+    position: relative;
+  
+    .choose__about{
+      position: absolute;
+      height: 577px;
+      padding: 100px 370px;
+      text-align: center;
+      background-color: #2c343e;
+      z-index: 1;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      
+      &-title{
+        margin-bottom: 32px;
+        opacity: 0.9;
+        @include text-size(529px, 40px, 48px, #fefcf7,'Fraunces',900);
+        padding: 0 100px;
+      }
+      
+      &-text{
+        opacity: 0.8;
+        @include text-size(540px, 16px, 26px, #fefcf7,'Barlow',400);
+      }
+      
+  }
+  
+    .choose__cards{
+      position: absolute;
+      display: flex;
+      width: 1110px;
+      margin: 0 auto;
+      z-index: 2;
+      top: 346px;
+      left: 105px;
+  
+      .choose___card {
+        width: 350px;
+        height: 382px;
+        padding: 200px 48px 48px 48px;
+        background-color: #0e8784;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+  
+  
+        .choose__card-title{
+          @include text-size(255px, 24px, 32px, #fefcf7, 'Fraunces', 900);
+          text-align: center;
+          margin-bottom: 24px;
+        }
+  
+        .choose__card-text{
+          text-align: center;
+          opacity: 0.8;
+          @include text-size(255px, 16px, 26px, #fefcf7, 'Barlow',400)
+        }
+  
+        &:not(:last-child){
+          margin-right: 30px;
+        }
+      }
+  
+      .choose__card-one{
+        background-image: url(../../images/coffee-icon.svg);
+        background-repeat: no-repeat;
+        background-position: center 72px;
+      }
+      .choose__card-two{
+        background-image: url(../../images/exclusive-icon.svg);
+        background-repeat: no-repeat;
+        background-position: center 72px;
+      }
+      .choose__card-three{
+        background-image: url(../../images/shipping-icon.svg);
+        background-repeat: no-repeat;
+        background-position: center 72px;
+      }
+    }
+  }
+}

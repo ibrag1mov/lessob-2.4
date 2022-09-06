@@ -1,7 +1,21 @@
-@mixin card($width, $height, $bg-color, $padding, $margin) {
+@mixin size($width, $height, $padding, $margin, $border-r, $border) {
   width: $width;
   height: $height;
-  background-color: $bg-color;
   padding: $padding;
   margin: $margin;
+  border-radius: $border-r;
+  -webkit-border-radius: $border-r;
+  -moz-border-radius: $border-r;
+  -ms-border-radius: $border-r;
+  -o-border-radius: $border-r;
+  border: $border;
+}
+
+@mixin text-size($witdh, $size, $lhight, $color, $fontF, $fontW) {
+  width: $witdh;
+  font-size: $size;
+  line-height: $lhight;
+  color: $color;
+  font-family: $fontF;
+  font-weight: $fontW;
 }

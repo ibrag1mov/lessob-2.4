@@ -1,0 +1,118 @@
+.commitment{
+  padding: 168px 0;
+  .container{
+  padding: 0 85px;
+  
+  .commitment__wrapper{
+    display: flex;
+    justify-content: space-between;
+    &-img{
+      &img{
+        width: 455px;
+        height: 520px;
+        }
+      }
+
+      &-info{
+        width: 540px;
+        height: 340px;
+        margin: 90px 0;
+        margin-left: 135px;
+
+        &-title {
+          margin-bottom: 32px;
+          @include text-size(357px, 40px, 48px, #333d4b, 'Fraunces', 900);
+        }
+
+        &-text{
+        
+          @include text-size(540px, 16px, 26px, #333d4b, 'Barlow', 400);
+          opacity: 0.8;
+        }
+      }
+    } 
+  }
+}
+
+//RESPONSIVE
+
+@media only screen and (max-width: $md){
+  .commitment{
+    padding: 168px 0;
+    .container{
+      padding: 0 40px;
+    
+    .commitment__wrapper{
+      display: flex;
+      justify-content: space-between;
+      &-img{
+        &img{
+          width: 281px;
+          height: 470px;
+          }
+        }
+  
+        &-info{
+          width: 339px;
+          height: 453px;
+          margin: 0;
+          margin-left: 69px;
+  
+          &-title {
+            margin-bottom: 30px;
+            @include text-size(286px, 32px, 48px, #333d4b, 'Fraunces', 900);
+          }
+  
+          &-text{
+          
+            @include text-size(339px, 15px, 25px, #333d4b, 'Barlow', 400);
+            opacity: 0.8;
+          }
+        }
+      } 
+    }
+  }
+}
+
+
+@media only screen and (max-width: 376px){
+  .commitment{
+    padding: 120px 0;
+    .container{
+      padding: 0;
+    
+    .commitment__wrapper{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      &-img{
+
+        &img{
+          width: 327px;
+          height: 400px;
+          }
+        }
+  
+        &-info{
+          height: 453px;
+          margin: 0;
+          width: 327px;
+          margin-left: 0px;
+          
+          &-title {
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 15px;
+            @include text-size(327px, 32px, 48px, #333d4b, 'Fraunces', 900);
+          }
+  
+          &-text{
+          
+            @include text-size(327px, 15px, 25px, #333d4b, 'Barlow', 400);
+            opacity: 0.8;
+          }
+        }
+      } 
+    }
+  }
+}

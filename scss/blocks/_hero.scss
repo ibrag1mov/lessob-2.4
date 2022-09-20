@@ -41,3 +41,104 @@
     }
   }
 }
+
+//RESPONSIVE
+
+@media only screen and (max-width: $md) {
+  .hero{
+
+    &__wrapper{
+      height: 600px;
+      background-image: url(../../images/tabelt-hero.jpg);
+      background-repeat: no-repeat;
+      background-size: 689px 500px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      padding: 117px 702px 116px 85px;
+  
+      &-title{
+        margin-bottom: 32px;
+        @include text-size(329px, 48px, 48px, #fefcf7,'Fraunces', 900);
+      }
+      &-text{
+        margin-bottom: 56px;
+        opacity: 0.8;
+        @include text-size(398px, 15px, 25px, #fefcf7, 'Barlow', 400);
+      }
+      a{
+        width: 417px;
+        display: inline-block;
+        text-decoration: none;
+        background-color: #0e8784;
+        @include text-size(217px,18px,25px,#fefcf7,'Fraunces',900);
+        border-radius:   6px;
+        -webkit-border-radius:   6px;
+        -moz-border-radius:   6px;
+        -ms-border-radius:   6px;
+        -o-border-radius:   6px;
+        padding: 15px 31px;
+  
+        &:hover{
+          background-color: #66d2cf;
+        }
+        &:active{
+          background-color: #e2dedb;
+        }
+      }
+    }
+  }
+  
+}
+
+@media only screen and (max-width: 375px){
+  .hero{
+
+    &__wrapper{
+      height: 600px;
+      background-image: url(../../images/hero-bg-mobile.jpg);
+      background-repeat: no-repeat;
+      background-size: 327px 500px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      padding: 100px 24px 99px 24px;
+      text-align: center;
+  
+      &-title{
+        margin-bottom: 24px;
+        @include text-size(279px, 40px, 40px, #fefcf7,'Fraunces', 900);
+      }
+      &-text{
+        margin-bottom: 56px;
+        opacity: 0.8;
+        @include text-size(279px, 15px, 25px, #fefcf7, 'Barlow', 400);
+      }
+      a{
+        width: 217px;
+        display: block;
+        text-decoration: none;
+        background-color: #0e8784;
+        @include text-size(220px,18px,25px,#fefcf7,'Fraunces',900);
+        border-radius:   6px;
+        -webkit-border-radius:   6px;
+        -moz-border-radius:   6px;
+        -ms-border-radius:   6px;
+        -o-border-radius:   6px;
+        padding: 15px 31px;
+        margin: 0 auto;
+  
+        &:hover{
+          background-color: #66d2cf;
+        }
+        &:active{
+          background-color: #e2dedb;
+        }
+      }
+    }
+  }
+}

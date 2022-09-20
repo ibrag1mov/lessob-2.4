@@ -1,0 +1,179 @@
+.map{
+  padding-top: 0px;
+  height: 366px;
+
+  .container{
+    padding-left: 85px;
+    height: 100%;
+  
+    .map__wrapper{
+      width: 86%;
+      height: 100%;
+
+      &-title{
+        @include text-size(255px, 24px, 32px, #83888f, 'Fraunces', 900);
+        margin-bottom: 72px;
+      }
+
+      &__list{
+        width: 1045px;
+        display: flex;
+        list-style-type: none;
+
+        &-item{
+          width: 285px;
+          margin-right: 95px;
+
+          img{
+            width: 40px;
+            height: 49px;
+            margin-bottom: 45px;
+          }
+
+          &-title{
+            @include text-size(285px, 32px, 36px, #333d4b, 'Fraunces', 900);
+            margin-bottom: 24px;
+          }
+
+          &-info_list{
+            list-style-type: none;
+
+            &-item{
+              @include text-size(285px, 16px, 26px, #333d4b, 'Barlow', 400);
+
+              &--link{
+                color: #333d4b;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+//RESPOMSIVE
+
+@media only screen and (max-width: $md){
+  .map{
+    padding: 0px;
+    height: 366px;
+  
+    .container{
+      padding-left: 40px;
+      height: 100%;
+    
+      .map__wrapper{
+        width: 86%;
+        height: 100%;
+  
+        &-title{
+          @include text-size(255px, 24px, 32px, #83888f, 'Fraunces', 900);
+          margin-bottom: 72px;
+        }
+  
+        &__list{
+          width: 688px;
+          display: flex;
+          list-style-type: none;
+  
+          &-item{
+            width: 223px;
+            margin-right: 9px;
+  
+            img{
+              width: 51px;
+              height: 49px;
+              margin-bottom: 48px;
+            }
+  
+            &-title{
+              @include text-size(223px, 24px, 36px, #333d4b, 'Fraunces', 900);
+              margin-bottom: 21px;
+            }
+  
+            &-info_list{
+              list-style-type: none;
+  
+              &-item{
+                @include text-size(223px, 16px, 26px, #333d4b, 'Barlow', 400);
+  
+                &--link{
+                  color: #333d4b;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }  
+}
+
+
+@media only screen and (max-width: 376px){
+  .map{
+    padding: 0px;
+    height: 366px;
+    margin-bottom: 600px;
+  
+    .container{
+      padding-left: 40px;
+      height: 100%;
+    
+      .map__wrapper{
+        width: 86%;
+        height: 100%;
+  
+        &-title{
+          @include text-size(255px, 24px, 32px, #83888f, 'Fraunces', 900);
+          margin-bottom: 72px;
+        }
+  
+        &__list{
+          width: 688px;
+          display: flex;
+          list-style-type: none;
+          flex-direction: column;
+  
+          &-item{
+            width: 223px;
+            margin-right: 0px;
+            margin-bottom: 50px;
+  
+            img{
+              display: block;
+              width: 51px;
+              height: 49px;
+              margin: 0 auto;
+              margin-bottom: 48px;
+            }
+  
+            &-title{
+              text-align: center;
+              @include text-size(223px, 24px, 36px, #333d4b, 'Fraunces', 900);
+              margin-bottom: 21px;
+            }
+  
+            &-info_list{
+              list-style-type: none;
+              text-align: center;
+  
+              &-item{
+                @include text-size(223px, 16px, 26px, #333d4b, 'Barlow', 400);
+  
+                &--link{
+                  color: #333d4b;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }  
+}

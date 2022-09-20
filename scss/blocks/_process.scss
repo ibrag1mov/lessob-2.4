@@ -98,3 +98,355 @@
     }
   }
 }
+
+.procces-subscribe{
+
+  .container{
+    padding: 0 20px;
+
+    .procces-subscribe__wrapper{
+      position: relative;
+      width: 100%;
+      padding: 100px 150px 99px 85px;
+      background-color: #2c343e;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+
+      .process__wrapper-line{
+        position: absolute;
+        width: 760px;
+        height: 2px;
+        background-color: #fdd6ba;
+        top: 115px;
+        left: 100px;
+        z-index: 1;
+      }
+
+      .process__wrapper-cards{
+        .card{
+          &-title{
+            color: #fefcf7;
+          }
+
+          &-text{
+            color: #fefcf7;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}
+
+//RESPONSIVE
+
+@media only screen and (max-width: $md){
+  .process{
+    width: 100%;
+    height: 622px;
+    padding: 144px 0;
+  
+    .container{
+      padding: 0 40px;
+      height: 200px;
+  
+      .process-title{
+        margin-bottom: 80px;
+        @include text-size(255px, 24px, 32px, #83888f, 'Fraunces', 900)
+      }
+  
+      .process__wrapper{
+        width: 768px;
+        position: relative;
+  
+        &-line{
+          position: absolute;
+          width: 497px;
+          height: 2px;
+          background-color: #fdd6ba;
+          top: 15px;
+          left: 0px;
+          z-index: 1;
+        }
+  
+        &-circle{
+          width: 100%;
+          position: absolute;
+          z-index: 2;
+          display: flex;
+        
+          .circle{
+            width: 31px;
+            height: 31px;
+            background-color: #fefcf7;
+            border: 2px solid #0e8784;
+            border-radius: 50%;
+            margin-right: 202px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+          }
+        }
+  
+        &-cards{
+          width: 689px;
+          display: flex;
+  
+  
+          .card{
+            padding: 48px 0;
+            width: 223px;
+            height: 371px;
+            margin-right: 10px;
+  
+            span{
+              @include text-size(90px, 72px, 72px, #fdd6ba, 'Fraunces', 900)
+            }
+  
+            &-title{
+              margin-top: 38px;
+              margin-bottom: 42px;
+              @include text-size(223px, 28px, 32px, #333d4b,'Fraunces', 900)
+            }
+  
+            &-text{
+              @include text-size(223px, 15px, 25px, #333d4b, 'Barlow', 400)
+            }
+          }
+        }
+  
+        &-link{
+          margin-top: 84px;
+  
+          a{
+            text-decoration: none;
+            background-color: #0e8784;
+            @include text-size(155px,18px,25px,#fefcf7,'Fraunces',900);
+            border-radius:   6px;
+            -webkit-border-radius:   6px;
+            -moz-border-radius:   6px;
+            -ms-border-radius:   6px;
+            -o-border-radius:   6px;
+            padding: 15px 31px;
+      
+            &:hover{
+              background-color: #66d2cf;
+            }
+  
+            &:active{
+              background-color: #e2dedb;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .procces-subscribe{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    .container{
+      width: 100%;
+      padding: 0;
+      margin: 0;
+  
+      .procces-subscribe__wrapper{
+        position: relative;
+        width: 768px;
+        padding: 97px 39px 70px 40px;
+        background-color: #2c343e;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+  
+        .process__wrapper-line{
+          position: absolute;
+          width: 490px;
+          height: 2px;
+          background-color: #fdd6ba;
+          top: 112px;
+          left: 45px;
+          z-index: 1;
+        }
+  
+        .process__wrapper-cards{
+          .card{
+            &-title{
+              color: #fefcf7;
+            }
+  
+            &-text{
+              color: #fefcf7;
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 376px){
+  .process{
+    width: 100%;
+    height: 1300px;
+    padding: 144px 0;
+    padding-top: 280px;
+
+    .container{
+      padding: 0;
+  
+      .process-title{
+        margin-bottom: 40px;
+        text-align: center;
+        @include text-size(327px, 24px, 32px, #83888f, 'Fraunces', 900)
+      }
+  
+      .process__wrapper{
+        width: 327px;
+        position: relative;
+  
+        &-line{
+          position: absolute;
+          width: 497px;
+          height: 2px;
+          background-color: #fdd6ba;
+          top: 15px;
+          left: 0px;
+          z-index: 1;
+          display: none;
+        }
+  
+        &-circle{
+          width: 100%;
+          position: absolute;
+          z-index: 2;
+          display: none;
+        
+          .circle{
+            width: 31px;
+            height: 31px;
+            background-color: #fefcf7;
+            border: 2px solid #0e8784;
+            border-radius: 50%;
+            margin-right: 202px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+          }
+        }
+  
+        &-cards{
+          width: 327px;
+          display: flex;
+          flex-direction: column;
+  
+  
+          .card{
+            padding: 48px 0;
+            width: 327px;
+            height: 252px;
+            margin-right: 0px;
+            margin-bottom: 56px;
+            text-align: center;
+  
+            span{
+              @include text-size(90px, 72px, 72px, #fdd6ba, 'Fraunces', 900)
+            }
+  
+            &-title{
+              margin: 24px 0;
+              @include text-size(327px, 28px, 32px, #333d4b,'Fraunces', 900)
+            }
+  
+            &-text{
+              @include text-size(327px, 15px, 25px, #333d4b, 'Barlow', 400)
+            }
+          }
+        }
+  
+        &-link{
+          margin-top: 84px;
+  
+          a{
+            width: 317px;
+            text-decoration: none;
+            background-color: #0e8784;
+            @include text-size(220px,18px,25px,#fefcf7,'Fraunces',900);
+            border-radius:   6px;
+            -webkit-border-radius:   6px;
+            -moz-border-radius:   6px;
+            -ms-border-radius:   6px;
+            -o-border-radius:   6px;
+            padding: 15px 31px;
+            display: block;
+            margin: 0 auto;
+      
+            &:hover{
+              background-color: #66d2cf;
+            }
+  
+            &:active{
+              background-color: #e2dedb;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .procces-subscribe{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    .container{
+      width: 100%;
+      padding: 0;
+      margin: 0;
+  
+      .procces-subscribe__wrapper{
+        position: relative;
+        width: 375px;
+        padding: 80px 24px;
+        background-color: #2c343e;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+  
+        .process__wrapper-line{
+          position: absolute;
+          width: 490px;
+          height: 2px;
+          background-color: #fdd6ba;
+          top: 112px;
+          left: 45px;
+          z-index: 1;
+        }
+  
+        .process__wrapper-cards{
+          .card{
+            &-title{
+              color: #fefcf7;
+            }
+  
+            &-text{
+              color: #fefcf7;
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+}

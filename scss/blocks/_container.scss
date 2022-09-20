@@ -4,3 +4,23 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+
+//RESPONSIVE
+
+@media only screen and (max-width: $md){
+  .container{
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 376px){
+  .container{
+    max-width: 327px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}

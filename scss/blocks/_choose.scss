@@ -1,12 +1,12 @@
-.choose{
+.choose {
   height: 950px;
   padding: 200px 0 100px 0;
   position: relative;
-  
-  .container{
+
+  .container {
     position: relative;
-  
-    .choose__about{
+
+    .choose__about {
       position: absolute;
       height: 577px;
       padding: 100px 370px;
@@ -18,22 +18,21 @@
       -moz-border-radius: 8px;
       -ms-border-radius: 8px;
       -o-border-radius: 8px;
-      
-      &-title{
+
+      &-title {
         margin-bottom: 32px;
         opacity: 0.9;
-        @include text-size(529px, 40px, 48px, #fefcf7,'Fraunces',900);
+        @include text-size(529px, 40px, 48px, #fefcf7, "Fraunces", 900);
         padding: 0 100px;
       }
-      
-      &-text{
+
+      &-text {
         opacity: 0.8;
-        @include text-size(540px, 16px, 26px, #fefcf7,'Barlow',400);
+        @include text-size(540px, 16px, 26px, #fefcf7, "Barlow", 400);
       }
-      
-  }
-  
-    .choose__cards{
+    }
+
+    .choose__cards {
       position: absolute;
       display: flex;
       width: 1110px;
@@ -41,7 +40,7 @@
       z-index: 2;
       top: 346px;
       left: 105px;
-  
+
       .choose___card {
         width: 350px;
         height: 382px;
@@ -52,39 +51,237 @@
         -moz-border-radius: 8px;
         -ms-border-radius: 8px;
         -o-border-radius: 8px;
-  
-  
-        .choose__card-title{
-          @include text-size(255px, 24px, 32px, #fefcf7, 'Fraunces', 900);
+
+        .choose__card-title {
+          @include text-size(255px, 24px, 32px, #fefcf7, "Fraunces", 900);
           text-align: center;
           margin-bottom: 24px;
         }
-  
-        .choose__card-text{
+
+        .choose__card-text {
           text-align: center;
           opacity: 0.8;
-          @include text-size(255px, 16px, 26px, #fefcf7, 'Barlow',400)
+          @include text-size(255px, 16px, 26px, #fefcf7, "Barlow", 400);
         }
-  
-        &:not(:last-child){
+
+        &:not(:last-child) {
           margin-right: 30px;
         }
       }
-  
-      .choose__card-one{
+
+      .choose__card-one {
         background-image: url(../../images/coffee-icon.svg);
         background-repeat: no-repeat;
         background-position: center 72px;
       }
-      .choose__card-two{
+      .choose__card-two {
         background-image: url(../../images/exclusive-icon.svg);
         background-repeat: no-repeat;
         background-position: center 72px;
       }
-      .choose__card-three{
+      .choose__card-three {
         background-image: url(../../images/shipping-icon.svg);
         background-repeat: no-repeat;
         background-position: center 72px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $md) {
+  .choose {
+    margin-top: 25em;
+    height: 1100px;
+    padding: 200px 0 100px 0;
+    position: relative;
+
+    .container {
+      position: relative;
+      width: 768px;
+
+      .choose__about {
+        position: absolute;
+        width: 688px;
+        height: 573px;
+        padding: 56px 70px;
+        text-align: center;
+        background-color: #2c343e;
+        z-index: 1;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+
+        &-title {
+          margin-bottom: 32px;
+          opacity: 0.9;
+          @include text-size(529px, 32px, 48px, #fefcf7, "Fraunces", 900);
+        }
+
+        &-text {
+          opacity: 0.8;
+          @include text-size(540px, 15px, 25px, #fefcf7, "Barlow", 400);
+        }
+      }
+
+      .choose__cards {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 688px;
+        margin: 0 auto;
+        z-index: 2;
+        top: 280px;
+        left: 95px;
+
+        .choose___card {
+          width: 573px;
+          height: 180px;
+          padding: 41px 48px 41px 70px;
+          margin-bottom: 24px;
+          background-color: #0e8784;
+          border-radius: 8px;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          -ms-border-radius: 8px;
+          -o-border-radius: 8px;
+
+          .choose__card-title {
+            @include text-size(344px, 24px, 32px, #fefcf7, "Fraunces", 900);
+            text-align: start;
+            margin-bottom: 24px;
+            margin-left: 140px;
+          }
+
+          .choose__card-text {
+            text-align: start;
+            opacity: 0.8;
+            margin-left: 140px;
+            @include text-size(344px, 15px, 25px, #fefcf7, "Barlow", 400);
+          }
+
+          &:not(:last-child) {
+            margin-right: 30px;
+          }
+        }
+
+        .choose__card-one {
+          background-image: url(../../images/coffee-icon.svg);
+          background-repeat: no-repeat;
+          background-position: 70px 62px;
+        }
+        .choose__card-two {
+          background-image: url(../../images/exclusive-icon.svg);
+          background-repeat: no-repeat;
+          background-position: 70px 62px;
+        }
+        .choose__card-three {
+          background-image: url(../../images/shipping-icon.svg);
+          background-repeat: no-repeat;
+          background-position: 70px 62px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 376px){
+  .choose {
+    margin-top: 55em;
+    height: 1499px;
+    padding: 200px 0 100px 0;
+    position: relative;
+
+    .container {
+      position: relative;
+      width: 327px;
+
+      .choose__about {
+        position: absolute;
+        width: 327px;
+        height: 902px;
+        padding: 56px 24px;
+        text-align: center;
+        background-color: #2c343e;
+        z-index: 1;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+
+        &-title {
+          margin-bottom: 24px;
+          opacity: 0.9;
+          padding: 0;
+          @include text-size(279px, 28px, 28px, #fefcf7, "Fraunces", 900);
+        }
+
+        &-text {
+          opacity: 0.8;
+          @include text-size(279px, 15px, 25px, #fefcf7, "Barlow", 400);
+        }
+      }
+
+      .choose__cards {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 327px;
+        margin: 0 auto;
+        z-index: 2;
+        top: 305px;
+        left: 24px;
+
+        .choose___card {
+          width: 279px;
+          height: 382px;
+          padding: 200px 12px 51px 12px;
+          margin-bottom: 24px;
+          background-color: #0e8784;
+          border-radius: 8px;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          -ms-border-radius: 8px;
+          -o-border-radius: 8px;
+
+          .choose__card-title {
+            @include text-size(255px, 24px, 32px, #fefcf7, "Fraunces", 900);
+            text-align: center;
+            margin-bottom: 24px;
+            margin-left: 0;
+          }
+
+          .choose__card-text {
+            text-align: center;
+            opacity: 0.8;
+            margin-left: 20px;
+            @include text-size(212px, 15px, 25px, #fefcf7, "Barlow", 400);
+          }
+
+          &:not(:last-child) {
+            margin-right: 0px;
+          }
+        }
+
+        .choose__card-one {
+          background-image: url(../../images/coffee-icon.svg);
+          background-repeat: no-repeat;
+          background-position: 103px 72px;
+        }
+        .choose__card-two {
+          background-image: url(../../images/exclusive-icon.svg);
+          background-repeat: no-repeat;
+          background-position: 103px 72px;
+        }
+        .choose__card-three {
+          background-image: url(../../images/shipping-icon.svg);
+          background-repeat: no-repeat;
+          background-position: 103px 72px;
+        }
       }
     }
   }
